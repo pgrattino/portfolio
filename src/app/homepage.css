@@ -1,3 +1,17 @@
+.homepage {
+    width: 96%;
+    align-self: center;
+}
+
+.top-content{
+    /*border: 5px solid blue;*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+}
+
 .heading-text{
     justify-self: center;
     align-self: center;
@@ -11,6 +25,8 @@
 .headshot-img{
     border-radius: 50%;
     margin-left: 5%;
+    max-height: 250px;
+    align-self: center;
 }
 
 .header-container{
@@ -19,5 +35,37 @@
     justify-content: center;
     align-content: center;
     width: 80vw;
-    /*background-color: red;*/
+    height: 80vh;
+    border: 5px solid red;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff; /* Adjust the text color */
+}
+
+.chevron {
+    font-size: 30px; /* Adjust the chevron size */
+    color: #fff;
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
