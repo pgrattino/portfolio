@@ -4,7 +4,6 @@
 }
 
 .top-content{
-    /*border: 5px solid blue;*/
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -22,6 +21,14 @@
     width: 370px;
 }
 
+.subheading-text{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    width: 100%;
+    justify-content: end;
+}
+
 .headshot-img{
     border-radius: 50%;
     margin-left: 5%;
@@ -36,29 +43,37 @@
     align-content: center;
     width: 80vw;
     height: 80vh;
-    border: 5px solid red;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll-indicator {
     position: fixed;
     bottom: 20px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     animation: bounce 1.5s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .scroll-text {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #fff; /* Adjust the text color */
 }
 
 .chevron {
     font-size: 30px; /* Adjust the chevron size */
-    color: #fff;
     display: inline-block;
     animation: bounce 1.5s infinite;
+}
+
+.float-text-container {
+    text-align: center;
 }
 
 @keyframes bounce {
@@ -67,5 +82,47 @@
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+.lang-logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    /*border: 1px solid blue;*/
+}
+
+.lang-logo{
+    /*border: 2px solid red;*/
+    width: fit-content;
+    align-content: center;
+}
+
+.lines-of-code{
+    border: 2px solid red;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width: 716px) {
+    .header-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-self: center;
+    }
+    .heading-text{
+        text-align: center;
+    }
+    .subheading-text{
+        justify-content: center;
+    }
+    .headshot-img{
+        margin-bottom: 3vh;
+        margin-left: 0;
+    }
+    .float-text {
+        font-size: xxx-large;
     }
 }
