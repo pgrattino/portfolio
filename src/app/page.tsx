@@ -2,7 +2,7 @@
 
 import DecryptedText from "@/components/DecryptedText";
 import LightRays from "@/components/LightRays/LightRays";
-import CountUp from "@/components/CountUp";
+// import CountUp from "@/components/CountUp";
 
 import Image from "next/image";
 import headshot from "@/assets/IMG_2262.jpg";
@@ -18,7 +18,7 @@ export default function Home() {
                     raysSpeed={1.5}
                     lightSpread={0.8}
                     rayLength={1.2}
-                    mouseInfluence={0.1}
+                    followMouse={false}
                     distortion={0.05}
                     className="custom-rays"
                 />
