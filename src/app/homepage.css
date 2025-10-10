@@ -1,0 +1,141 @@
+.homepage {
+    width: 96%;
+    align-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.light-rays-container.custom-rays {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top-content{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+}
+
+.heading-text{
+    justify-self: center;
+    align-self: center;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 370px;
+}
+
+.subheading-text{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    width: 100%;
+    justify-content: end;
+}
+
+.headshot-img{
+    border-radius: 50%;
+    margin-left: 5%;
+    max-height: 250px;
+    align-self: center;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 80vw;
+    height: 80vh;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    text-align: center;
+    animation: bounce 1.5s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.scroll-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.chevron {
+    font-size: 30px; /* Adjust the chevron size */
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+.float-text-container {
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.lang-logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    /*border: 1px solid blue;*/
+}
+
+.lang-logo{
+    /*border: 2px solid red;*/
+    width: fit-content;
+    align-content: center;
+}
+
+.lines-of-code{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 716px) {
+    .header-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-self: center;
+    }
+    .heading-text{
+        text-align: center;
+    }
+    .subheading-text{
+        justify-content: center;
+    }
+    .headshot-img{
+        margin-bottom: 3vh;
+        margin-left: 0;
+    }
+    .float-text {
+        font-size: xxx-large;
+    }
+}
