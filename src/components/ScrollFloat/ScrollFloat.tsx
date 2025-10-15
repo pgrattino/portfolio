@@ -1,3 +1,5 @@
+// This component was not made by me. It was found and adapted from: https://www.reactbits.dev/text-animations/scroll-float
+
 import React, { useEffect, useMemo, useRef, ReactNode, RefObject } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

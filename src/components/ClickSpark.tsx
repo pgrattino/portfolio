@@ -1,3 +1,5 @@
+// This component was not made by me. It was found and adapted from: https://www.reactbits.dev/animations/click-spark
+
 "use client"
 import React, { useRef, useEffect, useCallback } from "react";
 

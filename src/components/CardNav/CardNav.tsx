@@ -1,11 +1,11 @@
 "use client";
 import React, { useLayoutEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { gsap } from 'gsap';
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
 import logoAsset from '@/assets/logoipsum-400.svg';
-
-const logoSrc = typeof logoAsset === 'string' ? logoAsset : (logoAsset as { src?: string }).src ?? '';
+import Image from 'next/image';
 
 type CardNavLink = {
   label: string;
@@ -61,8 +61,6 @@ const CardNav: React.FC<CardNavProps> = ({
         contentEl.style.pointerEvents = 'auto';
         contentEl.style.position = 'static';
         contentEl.style.height = 'auto';
-
-        contentEl.offsetHeight;
 
         const topBar = 60;
         const padding = 16;
@@ -171,9 +169,9 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <div className="logo-container">
-            <a href="/" aria-label="Home Link">
-              <img src={logoSrc} alt={logoAlt} className="logo" />
-            </a>
+            <Link href="/" aria-label="Home Link">
+              <Image src={logoAsset} alt={logoAlt} className="logo" />
+            </Link>
           </div>
         </div>
 

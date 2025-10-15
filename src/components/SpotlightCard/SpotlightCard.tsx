@@ -1,3 +1,5 @@
+// This component was not made by me. It was found and adapted from: https://www.reactbits.dev/components/spotlight-card
+
 import React, { useRef } from "react";
 import "./SpotlightCard.css";
 

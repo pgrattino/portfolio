@@ -1,3 +1,5 @@
+// This component was not made by me. It was found and adapted from: https://www.reactbits.dev/backgrounds/light-rays
+
 "use client";
 import { useRef, useEffect, useState } from 'react';
 import { Renderer, Program, Triangle, Mesh } from 'ogl';
