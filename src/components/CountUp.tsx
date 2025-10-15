@@ -1,3 +1,5 @@
+// This component was not made by me. It was found and adapted from: https://www.reactbits.dev/text-animations/count-up
+
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 
