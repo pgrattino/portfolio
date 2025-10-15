@@ -1,7 +1,6 @@
 "use client";
 
 import DecryptedText from "@/components/DecryptedText";
-import LightRays from "@/components/LightRays/LightRays";
 // import CountUp from "@/components/CountUp";
 
 import Image from "next/image";
@@ -11,64 +10,52 @@ import "./homepage.css";
 export default function Home() {
     return (
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-            <div style={{ width: "100%", height: "100%", position: "relative" }}>
-                <LightRays
-                    raysOrigin="bottom-center"
-                    raysColor="#eb6efe"
-                    raysSpeed={1.5}
-                    lightSpread={0.8}
-                    rayLength={1.2}
-                    followMouse={false}
-                    distortion={0.05}
-                    className="custom-rays"
-                />
-
-                <div className="homepage">
-                    <div className="top-content">
-                        <div className="top-wrapper">
-                            <div className="header-container">
-                                <div className="heading-text">
-                                    <DecryptedText
-                                        text="Peyton Grattino"
-                                        animateOn="view"
-                                        speed={60}
-                                        maxIterations={30}
-                                        sequential={true}
-                                        revealDirection={"end"}
-                                    />
-                                    <DecryptedText
-                                        text="Full Stack Developer"
-                                        animateOn="view"
-                                        speed={60}
-                                        maxIterations={30}
-                                        sequential={true}
-                                        revealDirection={"end"}
-                                    />
-                                    <div className="subheading-text">
-                                        <p>📍</p>
-                                        <DecryptedText
-                                            text="Grand Junction, CO"
-                                            animateOn="view"
-                                            speed={60}
-                                            maxIterations={30}
-                                            sequential={true}
-                                            revealDirection={"end"}
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    src={headshot}
-                                    alt={"headshot"}
-                                    width="250"
-                                    className="headshot-img"
+            <div className="homepage">
+                <div className="top-content">
+                    <div className="top-wrapper">
+                        <div className="header-container">
+                            <div className="heading-text">
+                                <DecryptedText
+                                    text="Peyton Grattino"
+                                    animateOn="view"
+                                    speed={60}
+                                    maxIterations={30}
+                                    sequential={true}
+                                    revealDirection={"end"}
                                 />
+                                <DecryptedText
+                                    text="Full Stack Developer"
+                                    animateOn="view"
+                                    speed={60}
+                                    maxIterations={30}
+                                    sequential={true}
+                                    revealDirection={"end"}
+                                />
+                                <div className="subheading-text">
+                                    <p>📍</p>
+                                    <DecryptedText
+                                        text="Grand Junction, CO"
+                                        animateOn="view"
+                                        speed={60}
+                                        maxIterations={30}
+                                        sequential={true}
+                                        revealDirection={"end"}
+                                    />
+                                </div>
                             </div>
+                            <Image
+                                src={headshot}
+                                alt={"headshot"}
+                                width="250"
+                                className="headshot-img"
+                            />
+                        </div>
 
-                            <div className="lines-of-code">
-                                <p>Content Coming Soon</p>
-                            </div>
+                        <div className="lines-of-code">
+                            <p>Content Coming Soon</p>
+                        </div>
 
-                            {/* <div className="lines-of-code">
+                        {/* <div className="lines-of-code">
                                 <strong>Total Lines of Code:</strong>
                                 <div
                                     style={{
@@ -88,7 +75,6 @@ export default function Home() {
                                     <p>+</p>
                                 </div>
                             </div> */}
-                        </div>
                     </div>
                 </div>
             </div>

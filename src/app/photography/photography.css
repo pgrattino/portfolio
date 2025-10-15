@@ -1,0 +1,6 @@
+.testStyles {
+    width: 96%;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+}
