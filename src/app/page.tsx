@@ -1,6 +1,7 @@
 "use client";
 
 import { useSelector, useDispatch } from "react-redux";
+import type { AppDispatch, RootState } from "@/lib/store";
 import { showCursor, hideCursor } from "@/lib/features/splashCursorSlice";
 
 import DecryptedText from "@/components/DecryptedText";
@@ -13,12 +14,12 @@ import SplashCursor from "@/components/SplashCursor";
 
 export default function Home() {
 
-    const SplashCursorStatus = useSelector((state: { splashCursor: { isVisible: boolean } }) => state.splashCursor.isVisible);
-    const dispatch = useDispatch();
+    const SplashCursorStatus = useSelector((state: RootState) => state.splashCursor.isVisible);
+    const dispatch = useDispatch<AppDispatch>();
 
     return (
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-            {SplashCursorStatus ? <SplashCursor /> : null}
+            {SplashCursorStatus && <SplashCursor />}
             <div className="homepage">
                 <div className="top-content">
                     <div className="top-wrapper">
@@ -62,7 +63,6 @@ export default function Home() {
 
                         <div className="lines-of-code">
                             <p>Content Coming Soon</p>
-                            <p>{SplashCursorStatus ? "Cursor is visible" : "Cursor is hidden"}</p>
                             <button onClick={() => dispatch(showCursor())}>Show Cursor</button>
                             <button onClick={() => dispatch(hideCursor())}>Hide Cursor</button>
                         </div>

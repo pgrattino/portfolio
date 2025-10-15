@@ -7,8 +7,6 @@ import './CardNav.css';
 import logoAsset from '@/assets/logoipsum-400.svg';
 import Image from 'next/image';
 
-const logoSrc = typeof logoAsset === 'string' ? logoAsset : (logoAsset as { src?: string }).src ?? '';
-
 type CardNavLink = {
   label: string;
   href: string;
@@ -63,8 +61,6 @@ const CardNav: React.FC<CardNavProps> = ({
         contentEl.style.pointerEvents = 'auto';
         contentEl.style.position = 'static';
         contentEl.style.height = 'auto';
-
-        // contentEl.offsetHeight;
 
         const topBar = 60;
         const padding = 16;
@@ -174,7 +170,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <div className="logo-container">
             <Link href="/" aria-label="Home Link">
-              <Image src={logoAsset} alt={logoAlt} className="logo" width={400} height={400} />
+              <Image src={logoAsset} alt={logoAlt} className="logo" />
             </Link>
           </div>
         </div>
