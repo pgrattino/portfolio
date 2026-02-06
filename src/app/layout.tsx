@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Peyton Grattino | Full Stack Developer",
-  description: "Learn more about Peyton Grattino and the work he has done.",
+  description: "Full-stack developer specializing in TypeScript, React, Next.js, and Go, focused on scalable, data-driven applications.",
 };
 
 export default function RootLayout({
