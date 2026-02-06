@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Peyton Grattino's Portfolio",
+  title: "Peyton Grattino | Full Stack Developer",
   description: "Learn more about Peyton Grattino and the work he has done.",
 };
 
