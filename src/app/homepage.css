@@ -119,6 +119,20 @@
     text-align: center;
 }
 
+.link-icons-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-icons{
+    padding: 4px;
+}
+
+.link-icons:hover{
+    background-color: rgba(170, 170, 170, 0.75);
+    border-radius: 12px;
+}
+
 @media (max-width: 716px) {
     .header-container{
         flex-direction: column-reverse;
