@@ -66,6 +66,34 @@ export default function Home() {
 
                             <div className="lines-of-code">
                                 <p>Content Coming Soon</p>
+                                <div className={"link-icons-container"}>
+                                    <a
+                                        href={"https://github.com/pgrattino"}
+                                        className={"link-icons"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image
+                                            src={"/brand-github.svg"}
+                                            alt={"GitHub Profile"}
+                                            width={42}
+                                            height={42}
+                                        />
+                                    </a>
+                                    <a
+                                        href={"https://www.linkedin.com/in/peytongrattino/"}
+                                        className={"link-icons"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image
+                                            src={"/brand-linkedin.svg"}
+                                            alt={"LinkedIn Profile"}
+                                            width={42}
+                                            height={42}
+                                        />
+                                    </a>
+                                </div>
                             </div>
 
                             {/* <div className="lines-of-code">
